@@ -1,61 +1,101 @@
-body {
-  background-color: lightblue;
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+
+nav a {
+  color: white;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #1abc9c;
+}
+
+section {
+  padding: 2.5em 10%;
+}
+
+h2 {
+  margin-bottom: 1em;
+  color: #2c3e50;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #1abc9c;
+  display: inline-block;
+}
+
+p, li {
+  font-size: 1rem;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  margin-top: 1em;
+}
+
+.project {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1.5em;
+  border-radius: 8px;
+  flex: 1 1 calc(33% - 2em);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+ul {
+  list-style: disc inside;
+  margin-top: 1em;
+}
+
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #2c3e50;
   color: white;
   text-align: center;
-}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-
-p {
-  color: red;
-  text-align: center;
-}
-ul{
-  list-style-type:none;
-  margin:0;
-  padding:0;
-  overflow:hidden;
-  background-color:#777;
-}
-li{
-  float:left;
-}
-li a, .dropBtn{
-  display: inline-block;
-  color:pink;
-  text-align:center;
-  padding: 12px 14px;
-}
-li a:hover, .dropdown:hover .dropBtn{
-  background-color: red;
-}
-li.dropdown{
-  display:inline-block;
-}
-.dropdown-contest{
-  display:none;
-  position:absolute;
-  background-color:#f9f9f9;
-  min-width:160px;
-  box-shadow: 0px 8px 16px 0px rgba(1,0,1,0,3);
-  z-index:1;
-}
-
-.dropDown-content a{
-  color:black;
-  display:block;
-  text-align:left;
-}
-.dropdown-content a:hover{
-  background-color:#f1f2f1;
-  color:pink;
-}
-.dropdown:hover .dropdown-content{
-  display:block;
+  padding: 1.5em 1em;
+  margin-top: 2em;
 }
