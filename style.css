@@ -18,3 +18,26 @@ p {
 }
 
 /* Pr*
+body {
+  color: white; /* global default */
+}
+
+p {
+  color: white; /* ensure paragraphs are white */
+}
+
+/* Example override: if you have cards with light background */
+.project {
+  background-color: #333; /* dark background for contrast */
+  color: white;            /* ensure text in cards is white */
+}
+
+/* Alternatively, if you must keep card background light: override text */
+.project.light-bg {
+  background-color: white; /* light card */
+}
+.project.light-bg p,
+.project.light-bg h3,
+.project.light-bg li {
+  color: #333; /* darker text for readability on light background */
+}
