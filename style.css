@@ -44,6 +44,25 @@ header p {
 }
 
 nav {
+
+   /* Fix dark paragraph text under colored backgrounds */
+section p,
+section li,
+section span {
+  color: white !important;
+}
+
+#about p,
+#skills p,
+#projects p,
+#contact p {
+  color: white !important;
+}
+
+section {
+  color: white !important;
+}
+
   margin-top: 1em;
 }
 
