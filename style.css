@@ -1,4 +1,6 @@
-/* Reset & Base */
+/* ================================
+   Reset & Base Styles
+=================================== */
 * {
   margin: 0;
   padding: 0;
@@ -7,37 +9,73 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: purple;
-  color: white; /* Make all text white by default */
+  background-color: #5b2c83; /* deep purple */
+  color: white; /* global white text */
   line-height: 1.6;
 }
 
-/* Ensure paragraphs are white */
-p {
+/* Centered profile image */
+.profile-pic {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  margin: 1.5em auto;
+  display: block;
+}
+
+/* ================================
+   Header
+=================================== */
+header {
+  background-color: #2c3e50;
   color: white;
+  text-align: center;
+  padding: 3em 1em;
 }
 
-/* Pr*
-body {
-  color: white; /* global default */
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.3em;
 }
 
-p {
-  color: white; /* ensure paragraphs are white */
+header p {
+  font-size: 1.2rem;
+  color: #f0f0f0;
 }
 
-/* Example override: if you have cards with light background */
-.project {
-  background-color: #333; /* dark background for contrast */
-  color: white;            /* ensure text in cards is white */
+nav {
+  margin-top: 1em;
 }
 
-/* Alternatively, if you must keep card background light: override text */
-.project.light-bg {
-  background-color: white; /* light card */
+nav a {
+  color: white;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
-.project.light-bg p,
-.project.light-bg h3,
-.project.light-bg li {
-  color: #333; /* darker text for readability on light background */
+
+nav a:hover {
+  color: #1abc9c;
 }
+
+/* ================================
+   Sections
+=================================== */
+section {
+  padding: 3em 10%;
+  text-align: left;
+}
+
+h2 {
+  margin-bottom: 1em;
+  font-size: 2rem;
+  color: #ffffff;
+  border-bottom: 3px solid #1abc9c;
+  display: inline-block;
+  padding-bottom: 0.2em;
+}
+
+/* Make sure all section text is white */
+section p,
+sectio
