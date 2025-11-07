@@ -16,7 +16,7 @@ body {
 header {
   text-align: center;
   padding: 3rem 1rem;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.4);
   border-bottom: 2px solid #ffcc00;
 }
 
@@ -70,7 +70,7 @@ h2 {
   font-size: 1.8rem;
 }
 
-/* === Projects Section === */
+/* === Projects === */
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -92,20 +92,9 @@ h2 {
 
 .project h3 {
   color: #ffcc00;
-  margin-bottom: 0.5rem;
 }
 
-.project a {
-  color: #ffd966;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.project a:hover {
-  text-decoration: underline;
-}
-
-/* === Skills Section === */
+/* === Skills === */
 ul {
   list-style: none;
   display: flex;
@@ -127,12 +116,28 @@ li:hover {
 }
 
 /* === Contact Section === */
+#contact {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#contact p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #f4f4f4;
+}
+
 #contact a {
   color: #ffcc00;
   text-decoration: none;
+  font-weight: bold;
 }
 
 #contact a:hover {
+  color: #ffffff;
   text-decoration: underline;
 }
 
@@ -146,7 +151,7 @@ footer {
   border-top: 2px solid #ffcc00;
 }
 
-/* === Responsive Design === */
+/* === Responsive === */
 @media (max-width: 600px) {
   header h1 {
     font-size: 2.2rem;
