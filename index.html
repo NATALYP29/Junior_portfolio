@@ -83,3 +83,60 @@
   </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Bubbles</title>
+<style>
+  body {
+    background: #f9fafc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+    font-family: sans-serif;
+  }
+
+  .bubble {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #7b5cff, #5ce1e6);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .bubble:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+  }
+
+  .bubble span {
+    padding: 10px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="bubble" onclick="location.href='project1.html'">
+    <span>Project 1</span>
+  </div>
+  <div class="bubble" onclick="location.href='project2.html'">
+    <span>Project 2</span>
+  </div>
+  <div class="bubble" onclick="location.href='project3.html'">
+    <span>Project 3</span>
+  </div>
+
+</body>
+</html>
